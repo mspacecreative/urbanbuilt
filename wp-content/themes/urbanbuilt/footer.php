@@ -42,12 +42,11 @@ if ( ! is_page_template( 'page-template-blank.php' ) ) : ?>
 				<?php
 					if ( false !== et_get_option( 'show_footer_social_icons', true ) ) {
 						get_template_part( 'includes/social_icons', 'footer' );
-					}
+					} 
+					?>
 
-					// phpcs:disable WordPress.Security.EscapeOutput.OutputNotEscaped
-					echo _e('&copy; '); echo date('Y '); echo get_bloginfo('name'); _e('. All Rights Reserved.');
-					// phpcs:enable
-				?>
+					<p><?php echo esc_html_e('&copy; '); echo date('Y '); echo get_bloginfo('name'); esc_html_e('. All Rights Reserved.'); ?></p>
+					
 					</div>	<!-- .container -->
 				</div>
 			</footer> <!-- #main-footer -->
