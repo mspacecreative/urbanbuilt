@@ -668,10 +668,6 @@ footer p {
 	.artist-thumb, .sponsor-logo {
 		width: 48.75%;
 	}
-	.animated {
-		animation: none;
-		transform: none;
-	}
 	.et_pb_slider.et_pb_module .et_pb_slides .et_pb_slide_description h2.et_pb_slide_title {
 		font-size: 30px;
 		font-weight: bold!important;
@@ -806,8 +802,12 @@ footer p {
 		position: relative;
 		width: 100%;
 	}
-	.display-flex {
+	.animatedParent {
 		height: auto!important;
+	}
+	.animated {
+		animation: none;
+		transform: none;
 	}
 }
 
