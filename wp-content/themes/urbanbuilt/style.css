@@ -198,11 +198,16 @@ h1.post-title {
 	-webkit-font-smoothing: subpixel-antialiased;
 }
 
+#page-container {
+	padding-top: 55px!important;
+}
+
 @media (min-width: 981px) {
 	.et_vertical_nav #page-container #main-header {
 		width: 184px;
 		padding-top: 18px;
 		background: #f9f9f9;
+		padding-top: 64px!important;
 	}
 	.et_header_style_left .et-fixed-header #et-top-navigation {
 		padding-top: 15px;
