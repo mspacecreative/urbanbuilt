@@ -144,7 +144,7 @@ h1.post-title {
 }
 
 .page .entry-content:after {
-	background: url(img/colour-arrow-graphic.png) bottom left;
+	background: url(img/colour-arrow-graphic-2.png) bottom left;
 	position: absolute;
 	content: '';
 	background-size: 15%;
