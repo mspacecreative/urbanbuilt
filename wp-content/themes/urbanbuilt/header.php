@@ -31,31 +31,14 @@
 <?php ob_start(); ?>
 		<header id="main-header" data-height-onload="<?php echo esc_attr( et_get_option( 'menu_height', '66' ) ); ?>">
 			<div class="container clearfix et_menu_container">
-			<?php
-				$logo = ( $user_logo = et_get_option( 'divi_logo' ) ) && ! empty( $user_logo )
-					? $user_logo
-					: $template_directory_uri . '/images/logo.png';
-
-				ob_start();
-			?>
+			
 				<div class="logo_container">
 					<span class="logo_helper"></span>
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-						<img src="<?php echo esc_attr( $logo ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" id="logo" data-height-percentage="<?php echo esc_attr( et_get_option( 'logo_height', '54' ) ); ?>" />
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/urban-built-logo.svg" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" id="logo" data-height-percentage="<?php echo esc_attr( et_get_option( 'logo_height', '54' ) ); ?>" />
 					</a>
 				</div>
-			<?php
-				$logo_container = ob_get_clean();
-
-				/**
-				 * Filters the HTML output for the logo container.
-				 *
-				 * @since 3.10
-				 *
-				 * @param string $logo_container
-				 */
-				echo et_core_intentionally_unescaped( apply_filters( 'et_html_logo_container', $logo_container ), 'html' );
-			?>
+			
 				<div id="et-top-navigation" data-height="<?php echo esc_attr( et_get_option( 'menu_height', '66' ) ); ?>" data-fixed-height="<?php echo esc_attr( et_get_option( 'minimized_menu_height', '40' ) ); ?>">
 					<?php if ( ! $et_slide_header || is_customize_preview() ) : ?>
 						<nav id="top-menu-nav">
