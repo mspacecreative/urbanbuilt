@@ -428,8 +428,8 @@ END STICKY BAR
 
 .entry-content h1 {
 	font-family: acumin-pro;
-	font-weight: 700;
 	font-style: normal;
+	color: #999;
 	
 	margin: 0 0 30px;
 }
