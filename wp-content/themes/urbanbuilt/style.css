@@ -130,8 +130,6 @@ h1.post-title {
 	height: 100%;
 	top: 0;
 	left: 0;
-	mix-blend-mode: overlay;
-	background-color: #005695;
 }
 
 .offset-blocks-container .et_pb_row .et_pb_column {
