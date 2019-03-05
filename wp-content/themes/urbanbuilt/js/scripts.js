@@ -10,7 +10,14 @@ function offsetRowHeight() {
 	});
 }
 
+/*
 $(document).ready(function () {
+	offsetSpacerHeight();
+	offsetRowHeight();
+});
+*/
+
+$(window).load(function () {
 	offsetSpacerHeight();
 	offsetRowHeight();
 });
