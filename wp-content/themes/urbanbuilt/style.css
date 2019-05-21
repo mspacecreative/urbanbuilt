@@ -31,8 +31,8 @@ body {
 	transition: all .4s ease-in-out;
 }
 
-.et_pb_row .insurance-section-style {
-	width: 80%;
+.et_pb_row .et_pb_column.insurance-section-style.et-last-child, .et_pb_row .et_pb_column.insurance-section-style:last-child {
+	max-width: 80%;
 	margin: 0 auto!important;
 	float: none;
 }
